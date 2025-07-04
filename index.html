@@ -10,94 +10,90 @@
       html {
         scroll-behavior: smooth;
       }
-
       @keyframes slowFade {
         0%, 100% { opacity: 0.08; transform: scale(1); }
         50% { opacity: 0.15; transform: scale(1.02); }
       }
-
       .animate-slowfade {
         animation: slowFade 10s ease-in-out infinite;
       }
     </style>
   </head>
-  <body class="bg-white text-gray-800 font-sans">
+  <body class="bg-rose-50 text-slate-800 font-sans">
 
     <!-- Hero Section -->
-    <section class="relative pt-32 pb-20 px-4 bg-gradient-to-b from-white to-gray-100 text-center overflow-hidden">
-      <!-- Animated faded background logo -->
+    <section class="relative min-h-screen flex flex-col items-center justify-center px-4 bg-gradient-to-b from-rose-50 to-orange-50 text-center overflow-hidden">
+      <!-- Centered faded logo image -->
       <img src="Rudra_Consultancy__2.png" alt="Rudra Logo Background"
-           class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-10 w-[80vw] max-w-4xl animate-slowfade pointer-events-none select-none" />
+           class="absolute inset-0 m-auto w-[80vw] max-w-2xl opacity-10 animate-slowfade pointer-events-none select-none" />
 
-      <!-- Foreground Content -->
       <div class="relative z-10">
-        <h1 class="text-4xl sm:text-5xl font-bold text-blue-700 mb-4" data-aos="fade-up">
+        <h1 class="text-4xl sm:text-5xl font-bold text-amber-600 mb-4" data-aos="fade-up">
           RUDRA CONSULTANCY
         </h1>
-        <p class="text-gray-600 max-w-md mx-auto text-sm sm:text-base" data-aos="fade-up" data-aos-delay="150">
+        <p class="text-slate-500 max-w-md mx-auto text-sm sm:text-base" data-aos="fade-up" data-aos-delay="150">
           Crafting websites, apps & digital strategies to grow your business.
         </p>
       </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-16 px-4 bg-gray-100 text-center">
+    <section id="about" class="py-20 px-4 bg-orange-50 text-center">
       <div class="max-w-3xl mx-auto">
-        <h2 class="text-2xl sm:text-3xl font-semibold mb-4 text-gray-800" data-aos="fade-up">About Us</h2>
-        <p class="text-gray-600 text-sm sm:text-base" data-aos="fade-up" data-aos-delay="100">
-          Rudra Consultancy is a full-stack digital solutions sevice provider. We combine strategy, design, and development to deliver products and marketing that grow businesses.
+        <h2 class="text-2xl sm:text-3xl font-semibold mb-4 text-slate-800" data-aos="fade-up">About Us</h2>
+        <p class="text-slate-600 text-sm sm:text-base" data-aos="fade-up" data-aos-delay="100">
+          We are a future-forward company that crafts modern websites, mobile apps, and manages online presence for brands that want to stand out. We mix technology and creativity to deliver exceptional results.
         </p>
       </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="py-16 px-4 bg-white text-center">
-      <h2 class="text-2xl sm:text-3xl font-semibold mb-8 text-gray-800" data-aos="fade-up">Our Services</h2>
+    <section id="services" class="py-20 px-4 bg-gray-50 text-center">
+      <h2 class="text-2xl sm:text-3xl font-semibold mb-8 text-slate-800" data-aos="fade-up">Our Services</h2>
       <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 max-w-5xl mx-auto">
-        <div class="bg-blue-50 p-5 rounded-xl shadow hover:shadow-lg transition" data-aos="fade-up">
-          <h3 class="text-blue-600 font-bold mb-2">Web Development</h3>
-          <p class="text-gray-600 text-sm">Fast, modern, mobile-first websites with great UX.</p>
+        <div class="bg-white p-5 rounded-xl shadow hover:shadow-lg transition" data-aos="fade-up">
+          <h3 class="text-amber-600 font-bold mb-2">Web Development</h3>
+          <p class="text-slate-600 text-sm">Fast, modern, mobile-first websites with great UX.</p>
         </div>
-        <div class="bg-blue-50 p-5 rounded-xl shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="100">
-          <h3 class="text-blue-600 font-bold mb-2">App Development</h3>
-          <p class="text-gray-600 text-sm">Custom Android/iOS applications built to scale.</p>
+        <div class="bg-white p-5 rounded-xl shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="100">
+          <h3 class="text-amber-600 font-bold mb-2">App Development</h3>
+          <p class="text-slate-600 text-sm">Custom Android/iOS applications built to scale.</p>
         </div>
-        <div class="bg-blue-50 p-5 rounded-xl shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="200">
-          <h3 class="text-blue-600 font-bold mb-2">Social Media</h3>
-          <p class="text-gray-600 text-sm">Engaging content & growth strategies that convert.</p>
+        <div class="bg-white p-5 rounded-xl shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="200">
+          <h3 class="text-amber-600 font-bold mb-2">Social Media</h3>
+          <p class="text-slate-600 text-sm">Engaging content & growth strategies that convert.</p>
         </div>
-        <div class="bg-blue-50 p-5 rounded-xl shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="300">
-          <h3 class="text-blue-600 font-bold mb-2">SEO & Marketing</h3>
-          <p class="text-gray-600 text-sm">Boost your visibility, reach & authority online.</p>
+        <div class="bg-white p-5 rounded-xl shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="300">
+          <h3 class="text-amber-600 font-bold mb-2">SEO & Marketing</h3>
+          <p class="text-slate-600 text-sm">Boost your visibility, reach & authority online.</p>
         </div>
       </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-16 px-4 bg-gray-100 text-center">
-      <h2 class="text-2xl sm:text-3xl font-semibold mb-6 text-gray-800" data-aos="fade-up">Contact Us</h2>
-      <p class="text-gray-600 mb-4 text-sm sm:text-base" data-aos="fade-up" data-aos-delay="100">
-        Let’s discuss your project and turn ideas into reality.
-      </p>
-      <p class="text-blue-600 font-mono text-sm sm:text-base" data-aos="fade-up" data-aos-delay="200">
-        📧 rudra.consultancy.in@gmail.com<br />
-        📱 +91-84699-54263<br />
-        📸 @rudra.consultancy.in
-      </p>
+    <section id="contact" class="py-20 px-4 bg-orange-50 text-center">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-2xl sm:text-3xl font-semibold mb-6 text-slate-800" data-aos="fade-up">Contact Us</h2>
+        <p class="text-slate-600 mb-4 text-sm sm:text-base" data-aos="fade-up" data-aos-delay="100">
+          Let’s discuss your project and turn ideas into reality.
+        </p>
+        <p class="text-amber-600 font-mono text-sm sm:text-base" data-aos="fade-up" data-aos-delay="200">
+          📧 rudra.consultancy.in@gmail.com<br />
+          📱 +91-84699-54263<br />
+          📸 @rudra.consultancy.in
+        </p>
+      </div>
     </section>
 
     <!-- Footer -->
-    <footer class="text-center py-6 bg-white text-gray-500 text-sm">
+    <footer class="text-center py-6 bg-rose-50 text-slate-500 text-sm">
       &copy; 2025 Rudra Consultancy. All rights reserved.
     </footer>
 
-    <!-- Scroll animation -->
+    <!-- AOS Animation Script -->
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script>
-      AOS.init({
-        duration: 800,
-        once: true
-      });
+      AOS.init({ duration: 800, once: true });
     </script>
   </body>
 </html>
