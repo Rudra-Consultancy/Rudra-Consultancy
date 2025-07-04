@@ -3,63 +3,92 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Your Company Name</title>
+    <title>Rudra Consultancy</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <style>
+      html { scroll-behavior: smooth; }
+      img.animate-pop {
+        animation: pop-in 1s ease-out forwards;
+      }
+      @keyframes pop-in {
+        0% { transform: scale(0.8); opacity: 0; }
+        100% { transform: scale(1); opacity: 1; }
+      }
+    </style>
   </head>
-  <body class="bg-gray-950 text-white font-sans">
+  <body class="bg-white text-gray-800 font-sans">
+
     <!-- Hero Section -->
-    <section class="min-h-screen flex flex-col items-center justify-center text-center px-6">
-      <h1 class="text-4xl sm:text-6xl font-bold text-cyan-400 mb-4">Your Company Name</h1>
-      <p class="text-lg text-gray-300 max-w-xl">Innovative digital solutions in Web Development, App Creation, Social Media, and SEO.</p>
+    <section class="min-h-screen flex flex-col items-center justify-center text-center px-6 bg-gradient-to-b from-white to-gray-100">
+      <!-- Logo -->
+      <img src="logo.png" alt="Rudra Consultancy Logo" class="w-48 sm:w-64 mb-6 animate-pop" data-aos="fade-down" />
+      <h1 class="text-4xl sm:text-6xl font-bold text-blue-600 mb-4" data-aos="fade-up">Rudra Consultancy</h1>
+      <p class="text-lg text-gray-600 max-w-xl" data-aos="fade-up" data-aos-delay="200">
+        Professional business solutions in tech, strategy, and digital growth.
+      </p>
     </section>
 
     <!-- About Section -->
-    <section class="py-20 bg-gray-900 px-6">
+    <section class="py-20 px-6 bg-gray-100">
       <div class="max-w-4xl mx-auto text-center">
-        <h2 class="text-3xl font-semibold text-white mb-4">About Us</h2>
-        <p class="text-gray-400">
-          We are a future-forward company that crafts modern websites, mobile apps, and manages online presence for brands that want to stand out. We mix technology and creativity to deliver exceptional results.
+        <h2 class="text-3xl font-semibold text-gray-800 mb-4" data-aos="fade-up">About Us</h2>
+        <p class="text-gray-600" data-aos="fade-up" data-aos-delay="100">
+          Rudra Consultancy empowers brands and startups through modern tech solutions, custom strategies, and market innovation.
         </p>
       </div>
     </section>
 
     <!-- Services Section -->
-    <section class="py-20 px-6">
+    <section class="py-20 px-6 bg-white">
       <div class="max-w-5xl mx-auto">
-        <h2 class="text-3xl font-semibold text-center mb-10 text-white">Our Services</h2>
+        <h2 class="text-3xl font-semibold text-center mb-10 text-gray-800" data-aos="zoom-in">Our Services</h2>
         <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-          <div class="bg-gray-800 rounded-2xl p-6 shadow hover:shadow-lg transition">
-            <h3 class="text-cyan-400 font-bold mb-2">Web Development</h3>
-            <p class="text-gray-400 text-sm">Custom websites built with modern tech.</p>
+          <div class="bg-blue-50 rounded-2xl p-6 shadow hover:shadow-md transition" data-aos="fade-up">
+            <h3 class="text-blue-600 font-bold mb-2">Web Development</h3>
+            <p class="text-gray-600 text-sm">Modern, fast, mobile-friendly websites.</p>
           </div>
-          <div class="bg-gray-800 rounded-2xl p-6 shadow hover:shadow-lg transition">
-            <h3 class="text-cyan-400 font-bold mb-2">App Development</h3>
-            <p class="text-gray-400 text-sm">iOS & Android apps tailored for users.</p>
+          <div class="bg-blue-50 rounded-2xl p-6 shadow hover:shadow-md transition" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="text-blue-600 font-bold mb-2">App Development</h3>
+            <p class="text-gray-600 text-sm">Custom apps for Android & iOS.</p>
           </div>
-          <div class="bg-gray-800 rounded-2xl p-6 shadow hover:shadow-lg transition">
-            <h3 class="text-cyan-400 font-bold mb-2">Social Media</h3>
-            <p class="text-gray-400 text-sm">Creative content & growth strategy.</p>
+          <div class="bg-blue-50 rounded-2xl p-6 shadow hover:shadow-md transition" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="text-blue-600 font-bold mb-2">Social Media</h3>
+            <p class="text-gray-600 text-sm">Growth strategies and content design.</p>
           </div>
-          <div class="bg-gray-800 rounded-2xl p-6 shadow hover:shadow-lg transition">
-            <h3 class="text-cyan-400 font-bold mb-2">SEO</h3>
-            <p class="text-gray-400 text-sm">Boost visibility and search rankings.</p>
+          <div class="bg-blue-50 rounded-2xl p-6 shadow hover:shadow-md transition" data-aos="fade-up" data-aos-delay="300">
+            <h3 class="text-blue-600 font-bold mb-2">SEO</h3>
+            <p class="text-gray-600 text-sm">Boost rankings & traffic organically.</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Contact Section -->
-    <section class="py-20 bg-gray-900 px-6">
+    <section class="py-20 px-6 bg-gray-100">
       <div class="max-w-xl mx-auto text-center">
-        <h2 class="text-3xl font-semibold text-white mb-4">Contact Us</h2>
-        <p class="text-gray-400 mb-4">Let’s work together to build something amazing.</p>
-        <p class="text-cyan-400 font-mono">📧 your@email.com<br />📱 +91-12345-67890<br />📸 @yourhandle</p>
+        <h2 class="text-3xl font-semibold text-gray-800 mb-4" data-aos="fade-up">Contact Us</h2>
+        <p class="text-gray-600 mb-4" data-aos="fade-up" data-aos-delay="100">Let’s build your next big idea together.</p>
+        <p class="text-blue-600 font-mono" data-aos="fade-up" data-aos-delay="200">
+          📧 rudra@email.com<br />
+          📱 +91-12345-67890<br />
+          📸 @rudraconsultancy
+        </p>
       </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-950 text-center py-6 text-gray-600 text-sm">
-      &copy; 2025 Your Company Name. All rights reserved.
+    <footer class="bg-white text-center py-6 text-gray-500 text-sm">
+      &copy; 2025 Rudra Consultancy. All rights reserved.
     </footer>
+
+    <!-- AOS Animation Script -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        once: true,
+      });
+    </script>
   </body>
 </html>
